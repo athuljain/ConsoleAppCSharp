@@ -110,49 +110,77 @@
 //}
 
 
-using System;
-using System.Collections.Generic;
-namespace Program
-{
-    public class Program
-    {
-        //public static void Main(string[] args)
-        //{
-        //   Employee emp1 = new Employee();
-        //    Console.WriteLine("Enter Employee Name:");
-        //    emp1.EmployeeName = Console.ReadLine();
-        //    Console.WriteLine("Enter Employee Role:");
-        //    emp1.EmployeeRole = Console.ReadLine(); 
-        //    Console.WriteLine("Enter Employee Salary:");    
-        //    emp1.EmployeeSalary = Convert.ToInt32(Console.ReadLine());
-        //    emp1.DisplayEmployeeDetails();
-        //}
+//using System;
+//using System.Collections.Generic;
+//namespace Program
+//{
+//    public class Program
+//    {
 
-        public static void Main(string[] args)
-        {
-            List<Employee> employees = new List<Employee>();
-            string choice;
+//public static void Main(string[] args)
+//{
+//   Employee emp1 = new Employee();
+//    Console.WriteLine("Enter Employee Name:");
+//    emp1.EmployeeName = Console.ReadLine();
+//    Console.WriteLine("Enter Employee Role:");
+//    emp1.EmployeeRole = Console.ReadLine(); 
+//    Console.WriteLine("Enter Employee Salary:");    
+//    emp1.EmployeeSalary = Convert.ToInt32(Console.ReadLine());
+//    emp1.DisplayEmployeeDetails();
+//}
 
-            do
-            {
-                Employee emp = new Employee();
-                Console.WriteLine("Enter Employee Name:");
-                emp.EmployeeName = Console.ReadLine();
-                Console.WriteLine("Enter Employee Role:");
-                emp.EmployeeRole = Console.ReadLine();
-                Console.WriteLine("Enter Employee Salary:");
-                emp.EmployeeSalary = Convert.ToInt32(Console.ReadLine());
 
-                employees.Add(emp);
+//=============================================
 
-                Console.WriteLine(" All Employees Details:");
-                foreach (Employee e in employees)
-                {
-                    e.DisplayEmployee();
-                }
-                Console.WriteLine("do you want to add another employee ? (yes/no");
-                choice = Console.ReadLine();
-            } while (choice.ToLower() == "yes");
-        }
-    }
-}
+
+
+//        public static void Main(string[] args)
+//        {
+//            List<Employee> employees = new List<Employee>();
+//            string choice;
+
+//            do
+//            {
+//                Employee emp = new Employee();
+//                Console.WriteLine("Enter Employee Name:");
+//                emp.EmployeeName = Console.ReadLine();
+//                Console.WriteLine("Enter Employee Role:");
+//                emp.EmployeeRole = Console.ReadLine();
+//                Console.WriteLine("Enter Employee Salary:");
+//                emp.EmployeeSalary = Convert.ToInt32(Console.ReadLine());
+
+//                employees.Add(emp);
+
+//                Console.WriteLine(" All Employees Details:");
+//                foreach (Employee e in employees)
+//                {
+//                    e.DisplayEmployee();
+//                }
+//                Console.WriteLine("do you want to add another employee ? (yes/no"));
+//                choice = Console.ReadLine();
+//            } while (choice.ToLower() == "yes");
+//        }
+//    }
+//}
+
+
+//========================================================
+
+//constructor
+
+//using System;
+
+//namespace Program
+//{
+//    public class Program
+//    {
+//        public static void Main(string[] args)
+//        {
+//            Friuts frt = new Friuts("apple", "red");
+//            frt.DisplayFriuts();
+//        }
+//    }
+//}
+
+
+//================================================
