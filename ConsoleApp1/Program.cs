@@ -83,28 +83,76 @@
 //===============================================================
 
 
-using System;
+//using System;
 
+//namespace Program
+//{
+//    public class Program
+//    {
+//        public static void Main(string[] args)
+//        {
+//            Person p1 = new Person();
+//            p1.Name = "John";
+//            p1.Age = 30;
+//            p1.Display();
+
+
+//            Employee emp1 = new Employee(); 
+//            emp1.EmployeeName = "Alice";
+//            emp1.EmployeeRole = "MERN Stack Developer";
+//            emp1.EmployeeSalary = 50000;
+
+//            emp1.DisplayEmployeeDetails();
+
+
+//        }
+//    }
+//}
+
+
+using System;
+using System.Collections.Generic;
 namespace Program
 {
     public class Program
     {
+        //public static void Main(string[] args)
+        //{
+        //   Employee emp1 = new Employee();
+        //    Console.WriteLine("Enter Employee Name:");
+        //    emp1.EmployeeName = Console.ReadLine();
+        //    Console.WriteLine("Enter Employee Role:");
+        //    emp1.EmployeeRole = Console.ReadLine(); 
+        //    Console.WriteLine("Enter Employee Salary:");    
+        //    emp1.EmployeeSalary = Convert.ToInt32(Console.ReadLine());
+        //    emp1.DisplayEmployeeDetails();
+        //}
+
         public static void Main(string[] args)
         {
-            Person p1 = new Person();
-            p1.Name = "John";
-            p1.Age = 30;
-            p1.Display();
+            List<Employee> employees = new List<Employee>();
+            string choice;
 
+            do
+            {
+                Employee emp = new Employee();
+                Console.WriteLine("Enter Employee Name:");
+                emp.EmployeeName = Console.ReadLine();
+                Console.WriteLine("Enter Employee Role:");
+                emp.EmployeeRole = Console.ReadLine();
+                Console.WriteLine("Enter Employee Salary:");
+                emp.EmployeeSalary = Convert.ToInt32(Console.ReadLine());
 
-            Employee emp1 = new Employee(); 
-            emp1.EmployeeName = "Alice";
-            emp1.EmployeeRole = "MERN Stack Developer";
-            emp1.EmployeeSalary = 50000;
+                employees.Add(emp);
 
-            emp1.DisplayEmployeeDetails();
-
-
+                Console.WriteLine(" All Employees Details:");
+                foreach (Employee e in employees)
+                {
+                    e.DisplayEmployee();
+                }
+                Console.WriteLine("do you want to add another employee ? (yes/no");
+                choice = Console.ReadLine();
+            } while (choice.ToLower() == "yes");
         }
     }
 }
