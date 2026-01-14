@@ -96,6 +96,15 @@ namespace Program
             p1.Age = 30;
             p1.Display();
 
+
+            Employee emp1 = new Employee(); 
+            emp1.EmployeeName = "Alice";
+            emp1.EmployeeRole = "MERN Stack Developer";
+            emp1.EmployeeSalary = 50000;
+
+            emp1.DisplayEmployeeDetails();
+
+
         }
     }
 }
