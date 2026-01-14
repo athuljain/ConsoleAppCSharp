@@ -53,3 +53,49 @@
 //        }
 //    }
 //}
+
+
+
+//===============================================================
+
+//namespace Program
+//{
+//    public class Program
+//    {
+//        public static int addNum(int x ,int y)
+//        {
+//            return x + y;
+//        }
+
+//        public static double addNum(double x, double y)
+//        {
+//            return x + y;
+//        }
+//        public static void Main(string[] args)
+//        {
+//            Console.WriteLine(addNum(5, 10));
+//            Console.WriteLine(addNum(5.6, 10));
+//        }
+//    }
+//}
+
+
+//===============================================================
+
+
+using System;
+
+namespace Program
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Person p1 = new Person();
+            p1.Name = "John";
+            p1.Age = 30;
+            p1.Display();
+
+        }
+    }
+}
