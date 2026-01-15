@@ -206,17 +206,17 @@
 
 //        public static void Main(string[] args)
 //        {
-//            DeveloperChild dev = new DeveloperChild();
-//            dev.Id = 101;
-//            dev.Name = "Athul";
-//            dev.Salary = 50000;
-//            dev.ProgrammingLanguage = "C#";
+//            //DeveloperChild dev = new DeveloperChild();
+//            //dev.Id = 101;
+//            //dev.Name = "Athul";
+//            //dev.Salary = 50000;
+//            //dev.ProgrammingLanguage = "C#";
 
-//            ManegerChild mgr = new ManegerChild();
-//            mgr.TeamSize = 10;
+//            //ManegerChild mgr = new ManegerChild();
+//            //mgr.TeamSize = 10;
 
-//            dev.DisplayDeveloperInfo();
-//            mgr.DisplayManagerInfo();
+//            //dev.DisplayDeveloperInfo();
+//            //mgr.DisplayManagerInfo();
 
 
 
@@ -226,7 +226,7 @@
 //            mgr1.Salary = 80000;
 //            mgr1.TeamSize = 10;
 
-//            dev.DisplayDeveloperInfo();
+//            //dev.DisplayDeveloperInfo();
 //            Console.WriteLine();
 //            mgr1.DisplayManagerInfo();
 //        }
@@ -236,3 +236,29 @@
 
 
 //===============================================================
+
+
+//Polymorphism in C# means one method having different behaviors based on the object or input.
+//It allows the same method name to perform different tasks.
+
+
+//================================================================
+
+
+namespace Program
+{
+    public class Program
+    {
+
+        public static void Main(string[] args)
+        {
+            Payment payment;
+            payment=new CreditcarPayment();
+            payment.MakePayment();
+
+            payment = new UPIpayment();
+            payment=new UPIpayment();
+            payment.MakePayment();
+        }
+    }
+}
