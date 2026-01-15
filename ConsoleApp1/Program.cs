@@ -184,3 +184,55 @@
 
 
 //================================================
+
+
+
+
+//inheritance
+
+//    Inheritance in C# is an object-oriented programming concept 
+//    where a child class (derived class) acquires the properties and methods of a parent class (base class). 
+//    It helps in code reusability, method overriding, and 
+//    establishing a parent–child relationship between classes.
+
+
+
+//using System;
+
+//namespace Program
+//{
+//    public class Program
+//    {
+
+//        public static void Main(string[] args)
+//        {
+//            DeveloperChild dev = new DeveloperChild();
+//            dev.Id = 101;
+//            dev.Name = "Athul";
+//            dev.Salary = 50000;
+//            dev.ProgrammingLanguage = "C#";
+
+//            ManegerChild mgr = new ManegerChild();
+//            mgr.TeamSize = 10;
+
+//            dev.DisplayDeveloperInfo();
+//            mgr.DisplayManagerInfo();
+
+
+
+//            ManegerChild mgr1 = new ManegerChild();
+//            mgr1.Id = 201;
+//            mgr1.Name = "Rahul";
+//            mgr1.Salary = 80000;
+//            mgr1.TeamSize = 10;
+
+//            dev.DisplayDeveloperInfo();
+//            Console.WriteLine();
+//            mgr1.DisplayManagerInfo();
+//        }
+//    }
+//}
+
+
+
+//===============================================================
