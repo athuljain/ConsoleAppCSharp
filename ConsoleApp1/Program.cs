@@ -273,25 +273,45 @@
 // generics 
 
 
+//namespace Program
+//{
+//    public class Program
+//    {
+//        public static void Main(string[] args)
+//        {
+//            GenericDataBase<int> intList = new GenericDataBase<int>();
+//            intList.CreateList(10);
+//            intList.CreateList(20);
+//            intList.Display();
+
+//            GenericDataBase<string> strList = new GenericDataBase<string>();
+//            strList.CreateList("C#");
+//            strList.CreateList("Generics");
+//            strList.Display();
+//        }
+//    }
+//}
+
+
+
+
+
+//==========================================================
+
+
 namespace Program
 {
-    public class Program
+public class Program
     {
         public static void Main(string[] args)
         {
-            GenericDataBase<int> intList = new GenericDataBase<int>();
-            intList.CreateList(10);
-            intList.CreateList(20);
-            intList.Display();
+            //File.Create("data.txt").Close();
 
-            GenericDataBase<string> strList = new GenericDataBase<string>();
-            strList.CreateList("C#");
-            strList.CreateList("Generics");
-            strList.Display();
+
+
+
+            File.WriteAllText("data.txt", "Hello C# File Handling");
+            Console.WriteLine(File.ReadAllText("data.txt"));
         }
     }
 }
-
-
-
-
