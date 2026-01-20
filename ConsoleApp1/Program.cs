@@ -245,23 +245,53 @@
 //================================================================
 
 
+//namespace Program
+//{
+//    public class Program
+//    {
+
+//        public static void Main(string[] args)
+//        {
+//            Payment payment;
+//            payment=new CreditcarPayment();
+//            payment.MakePayment();
+
+//            payment = new UPIpayment();
+//            payment=new UPIpayment();
+//            payment.MakePayment();
+
+//        }
+
+
+//    }
+//}
+
+
+
+//===============================================================
+
+// generics 
+
+
 namespace Program
 {
     public class Program
     {
-
         public static void Main(string[] args)
         {
-            Payment payment;
-            payment=new CreditcarPayment();
-            payment.MakePayment();
+            GenericDataBase<int> intList = new GenericDataBase<int>();
+            intList.CreateList(10);
+            intList.CreateList(20);
+            intList.Display();
 
-            payment = new UPIpayment();
-            payment=new UPIpayment();
-            payment.MakePayment();
-
+            GenericDataBase<string> strList = new GenericDataBase<string>();
+            strList.CreateList("C#");
+            strList.CreateList("Generics");
+            strList.Display();
         }
-
-
     }
 }
+
+
+
+
