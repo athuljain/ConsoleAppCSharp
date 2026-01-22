@@ -299,19 +299,43 @@
 //==========================================================
 
 
-namespace Program
-{
-public class Program
-    {
-        public static void Main(string[] args)
-        {
-            //File.Create("data.txt").Close();
+//namespace Program
+//{
+//public class Program
+//    {
+//        public static void Main(string[] args)
+//        {
+//            //File.Create("data.txt").Close();
 
 
 
 
-            File.WriteAllText("data.txt", "Hello C# File Handling");
-            Console.WriteLine(File.ReadAllText("data.txt"));
-        }
-    }
-}
+//            File.WriteAllText("data.txt", "Hello C# File Handling");
+//            Console.WriteLine(File.ReadAllText("data.txt"));
+//        }
+//    }
+//}
+
+
+
+//=========================================================
+
+
+
+
+//namespace GetSet
+//{
+//    public class GetSet
+//    {
+//        public static void Main(string[] args)
+//        {
+//            Student s = new Student("athul", "Male");
+//            Console.WriteLine("Name: " + s.Name + "Gender: " + s.Gender);
+//        }
+//    }
+//}
+
+
+
+
+//========================================================
